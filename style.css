@@ -259,8 +259,7 @@ h1 span {
 }
 
 .hero h1 {
-    font-size: clamp(2.5rem, 4.6vw, 4.4rem);
-    max-width: 620px;
+    text-wrap: balance;
 }
 
 .hero-text {
@@ -514,8 +513,8 @@ h1 span {
 }
 
 .feature-control {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
     border: 1px solid rgba(16,39,30,.2);
     border-radius: 999px;
     background: rgba(255,255,255,.72);
@@ -816,7 +815,9 @@ h1 span {
     .menu-toggle {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         gap: 5px;
+        padding: 10px;
         border: none;
         background: transparent;
         cursor: pointer;
@@ -833,8 +834,7 @@ h1 span {
     }
 
     .hero-bottom-inner {
-        gap: 12px 16px;
-        padding: 14px 0;
+        display: none;
     }
 
     .intro-grid,
@@ -903,16 +903,6 @@ h1 span {
 
     .hero-text {
         font-size: 0.96rem;
-    }
-
-    .hero-bottom-inner {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 10px 14px;
-        padding: 10px 0;
-    }
-
-    .hero-bottom span {
-        font-size: 0.58rem;
     }
 
     .service-grid {
